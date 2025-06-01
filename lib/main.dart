@@ -1,4 +1,5 @@
 import 'package:counter/counter.dart';
+import 'package:demo_app/device_info_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,6 +26,6 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CounterScreen();
+    return DeviceInfoScreen();
   }
 }

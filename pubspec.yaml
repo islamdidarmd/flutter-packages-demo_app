@@ -11,6 +11,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   counter:
     path: packages/counter/
+  device_info:
+    path: packages/device_info/
 
 dev_dependencies:
   flutter_test:
