@@ -10,8 +10,9 @@ public class DeviceInfoPlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
+    case "getDeviceInfo":
+        let info = "iOS \(UIDevice.current.model) \n\(UIDevice.current.systemName), \n version\(UIDevice.current.systemVersion)"
+        result(info)
     default:
       result(FlutterMethodNotImplemented)
     }
